@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App{
+  background: #edf2f8;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background: white;
+  width: 750px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.colLeft{
+  width: 35%;
+  background: url(./img/drawers.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.colRight{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+p{
+  font-size: 12px;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profileName{
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.share{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all ease 300ms;
+}
+
+.share:hover{
+  transform: scale(1.2);
+}
+
+.Rs{
+  background: #475669;
+  position: absolute;
+  bottom: 100px;
+  right: -35px;
+  width: 150px;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px 30px;
+  justify-content: space-around;
+  color: white;
+  text-transform: uppercase;
+  align-items: center;
+}
