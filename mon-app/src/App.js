@@ -9,6 +9,10 @@ function App() {
 
   const [isActive, setIsActive] = useState(false);
 
+  const handleClick = event => {
+    setIsActive(current => !current);
+  };
+
   return (
     <div className="App">
       <div className="container">
@@ -25,13 +29,13 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="Rs">
+        <div className={isActive ? 'active Rs' : 'Rs'}>
           <p>Share</p>
           <img src={Facebook} />
           <img src={Twitter} />
           <img src={Pinterest} />
         </div>
-        <button className='share'><img src={Share} /></button>
+        <button className='share' onClick={handleClick}><img src={Share} /></button>
       </div>
     </div>
   );
